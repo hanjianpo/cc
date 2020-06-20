@@ -9,16 +9,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Install Arthas &mdash; Arthas 3.3.3 documentation</title>
+  <title>Arthas Documentation &mdash; Arthas 3.3.3 documentation</title>
   
 
-  
   
     <link rel="shortcut icon" href="_static/favicon.ico"/>
   
   
-  
-
   
   <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
   
@@ -31,7 +28,6 @@
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
-    
 
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
@@ -39,8 +35,7 @@
     <link rel="stylesheet" href="_static/overrides.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Download" href="download.html" />
-    <link rel="prev" title="Arthas Documentation" href="index.html" />
+    <link rel="next" title="Install Arthas" href="install-detail.html" />
 <script src="_static/center_page.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/github.min.css">
  
@@ -55,16 +50,21 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-
-            <a href="index.html" class="icon icon-home"> Arthas
+          
+          
+            <a href="#" class="icon icon-home"> Arthas
  
           
           </a>
- 
+
+          
+            
             
               <div class="version">
                 3.3.3
               </div>
+            
+          
 
           
 <div role="search">
@@ -75,31 +75,15 @@
   </form>
 </div>
 
+          
         </div>
 
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
 
             
-              <ul class="current">
+              <ul>
 <li class="toctree-l1"><a class="reference external" href="https://alibaba.github.io/arthas/arthas-tutorials?language=en">Online tutorials(Recommend)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#quick-installation">Quick installation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#use-arthas-boot-recommended">Use <code class="docutils literal notranslate"><span class="pre">arthas-boot</span></code>(Recommended)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#use-as-sh">Use <code class="docutils literal notranslate"><span class="pre">as.sh</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#full-installation">Full installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#manual-installation">Manual Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#installation-via-packages">Installation via Packages</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#instruction-for-debian-based-systems">Instruction for Debian based systems</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#instruction-for-fedora-based-systems">Instruction for Fedora based systems</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#offline-help-documentation">Offline Help Documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#uninstall">Uninstall</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="install-detail.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="download.html">Download</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick-start.html">Quick start</a></li>
 <li class="toctree-l1"><a class="reference internal" href="advanced-use.html">Advanced usage</a></li>
@@ -114,6 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="contact-us.html">Contact us</a></li>
 </ul>
 
+            
           
         </div>
       </div>
@@ -125,7 +110,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Arthas</a>
+          <a href="#">Arthas</a>
         
       </nav>
 
@@ -134,101 +119,88 @@
         
         <div class="rst-content">
         
-  
+     
+
 
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="#">Docs</a> &raquo;</li>
         
-      <li>Install Arthas</li>
-
+      <li>Arthas Documentation</li>
+    
       <li class="wy-breadcrumbs-aside">
-         
-              <a href="https://github.com/alibaba/arthas/blob/master/site/src/site/sphinx/en/install-detail.md" class="fa fa-github"> Edit on GitHub</a>
+ 
+            
+              <a href="https://github.com/alibaba/arthas/blob/master/site/src/site/sphinx/en/index.md" class="fa fa-github"> Edit on GitHub</a>
 
+        
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="install-arthas">
-<h1>Install Arthas<a class="headerlink" href="#install-arthas" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="quick-installation">
-<h2>Quick installation<a class="headerlink" href="#quick-installation" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="use-arthas-boot-recommended">
-<h3>Use <code class="docutils literal notranslate"><span class="pre">arthas-boot</span></code>(Recommended)<a class="headerlink" href="#use-arthas-boot-recommended" title="Permalink to this headline">¶</a></h3>
-<p>Download<code class="docutils literal notranslate"><span class="pre">arthas-boot.jar</span></code>，Start with <code class="docutils literal notranslate"><span class="pre">java</span></code> command:</p>
-<div class="highlight-bash notranslate"><div class="highlight hljs"><pre class="bash">curl -O https://alibaba.github.io/arthas/arthas-boot.jar
-java -jar arthas-boot.jar</pre></div>
+  <div class="section" id="arthas-documentation">
+<h1>Arthas Documentation<a class="headerlink" href="#arthas-documentation" title="Permalink to this headline">¶</a></h1>
+<p><strong><a class="reference external" href="https://alibaba.github.io/arthas/">中文文档/Chinese Documentation</a></strong></p>
+<p><img alt="_images/arthas.png" src="_images/arthas.png" /></p>
+<p>Arthas is a Java diagnostic tool open-sourced by Alibaba middleware team. It is widely adopted and popular among the developers inside Alibaba. Arthas helps developers in trouble-shooting issues in production environment for Java based applications without modifying code or restarting servers.</p>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>Oftentimes the production system network is inaccessible from local development environment. If issues are encountered in production systems, it is impossible to use IDE to debug the application remotely. What’s even worse, debugging in production environment is unacceptable, as it will suspend all the threads, leading to services downtime.</p>
+<p>Developers could always try to reproduce the same issue on the test/staging environment. However, this is tricky as some issues cannot be reproduced easily in a different environment, or even disappear once restarted.</p>
+<p>And if you’re thinking of adding some logs to your code to help trouble-shoot the issue, you will have to go through the following lifecycle: test, staging, and then to production. Time is money! This approach is inefficient! Worse still, the issue may not be fixed since it might be irreproducible once the JVM is restarted, as described above.</p>
+<p>Arthas is built to solve these issues. A developer can troubleshoot production issues on the fly. No JVM restart, no additional code changes. Arthas works as an observer, that is, it will never suspend your running threads.</p>
 </div>
-<p>Print usage:</p>
-<div class="highlight-bash notranslate"><div class="highlight hljs"><pre class="bash">java -jar arthas-boot.jar -h</pre></div>
+<div class="section" id="key-features">
+<h2>Key features<a class="headerlink" href="#key-features" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Check whether a class is loaded? Or where the class is loaded from? (Useful for trouble-shooting jar file conflicts)</p></li>
+<li><p>Decompile a class to ensure the code is running as expected.</p></li>
+<li><p>Check classloader statistics, e.g. the number of classloaders, the number of classes loaded per classloader, the classloader hierarchy, possible classloader leaks, etc.</p></li>
+<li><p>Check the method invocation details, e.g. method parameter, returned values, exceptions and etc.</p></li>
+<li><p>Check the stack trace of specified method invocation. This is useful when a developer wants to know the caller of the method.</p></li>
+<li><p>Trace the method invocation to find slow sub-invocations.</p></li>
+<li><p>Monitor method invocation statistics, e.g. QPS (Query Per Second), RT (Return Time), success rate and etc.</p></li>
+<li><p>Monitor system metrics, thread states and CPU usage, GC statistics and etc.</p></li>
+<li><p>Supports command line interactive mode, with auto-complete feature enabled.</p></li>
+<li><p>Supports telnet and WebSocket, which enables both local and remote diagnostics with command line and browsers.</p></li>
+<li><p>Supports profiler/Flame Graph</p></li>
+<li><p>Supports JDK 6+</p></li>
+<li><p>Supports Linux/Mac/Windows</p></li>
+</ul>
+<p><strong>If you are using Arthas, please let us know. Your feedback is very important to us: <a class="reference external" href="https://github.com/alibaba/arthas/issues/111">View</a></strong></p>
 </div>
-</div>
-<div class="section" id="use-as-sh">
-<h3>Use <code class="docutils literal notranslate"><span class="pre">as.sh</span></code><a class="headerlink" href="#use-as-sh" title="Permalink to this headline">¶</a></h3>
-<p>You can install Arthas with one single line command on Linux, Unix, and Mac. Pls. copy the following command and paste it into the command line, then press <em>Enter</em> to run:</p>
-<div class="highlight-bash notranslate"><div class="highlight hljs"><pre class="bash">curl -L https://alibaba.github.io/arthas/install.sh | sh</pre></div>
-</div>
-<p>The command above will download the bootstrap script <code class="docutils literal notranslate"><span class="pre">as.sh</span></code> to the current directory. You can move it to any other place you want, or put its location in <code class="docutils literal notranslate"><span class="pre">$PATH</span></code>.</p>
-<p>You can enter its interactive interface by executing <code class="docutils literal notranslate"><span class="pre">as.sh</span></code>, or execute <code class="docutils literal notranslate"><span class="pre">as.sh</span> <span class="pre">-h</span></code> for more help information.</p>
-</div>
-</div>
-<div class="section" id="full-installation">
-<h2>Full installation<a class="headerlink" href="#full-installation" title="Permalink to this headline">¶</a></h2>
-<p>Latest Version, Click To Download: <a class="reference external" href="http://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&amp;g=com.taobao.arthas&amp;a=arthas-packaging&amp;e=zip&amp;c=doc&amp;v=LATEST"><img alt="https://img.shields.io/maven-central/v/com.taobao.arthas/arthas-packaging.svg?style=flat-square" src="https://img.shields.io/maven-central/v/com.taobao.arthas/arthas-packaging.svg?style=flat-square" /></a></p>
-<p>Download and unzip, find <code class="docutils literal notranslate"><span class="pre">arthas-boot.jar</span></code> in the directory. Start with <code class="docutils literal notranslate"><span class="pre">java</span></code> command:</p>
-<div class="highlight-bash notranslate"><div class="highlight hljs"><pre class="bash">java -jar arthas-boot.jar</pre></div>
-</div>
-<p>Print usage:</p>
-<div class="highlight-bash notranslate"><div class="highlight hljs"><pre class="bash">java -jar arthas-boot.jar -h</pre></div>
-</div>
-</div>
-<div class="section" id="manual-installation">
-<h2>Manual Installation<a class="headerlink" href="#manual-installation" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="manual-install.html"><span class="doc">Manual Installation</span></a></p>
-</div>
-<div class="section" id="installation-via-packages">
-<h2>Installation via Packages<a class="headerlink" href="#installation-via-packages" title="Permalink to this headline">¶</a></h2>
-<p>Arthas has packages for Debian and Fedora based systems.
-you can get them from the github releases page https://github.com/alibaba/arthas/releases.</p>
-<div class="section" id="instruction-for-debian-based-systems">
-<h3>Instruction for Debian based systems<a class="headerlink" href="#instruction-for-debian-based-systems" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight hljs"><pre class="bash">sudo dpkg -i arthas*.deb</pre></div>
-</div>
-</div>
-<div class="section" id="instruction-for-fedora-based-systems">
-<h3>Instruction for Fedora based systems<a class="headerlink" href="#instruction-for-fedora-based-systems" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-bash notranslate"><div class="highlight hljs"><pre class="bash">sudo rpm -i arthas*.rpm</pre></div>
-</div>
-</div>
-<div class="section" id="usage">
-<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
-<p>After the installation of packages, execute</p>
-<div class="highlight-bash notranslate"><div class="highlight hljs"><pre class="bash">as.sh</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="offline-help-documentation">
-<h2>Offline Help Documentation<a class="headerlink" href="#offline-help-documentation" title="Permalink to this headline">¶</a></h2>
-<p>Latest Version Documentation, Click To Download:<a class="reference external" href="http://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&amp;g=com.taobao.arthas&amp;a=arthas-packaging&amp;e=zip&amp;c=doc&amp;v=LATEST"><img alt="https://img.shields.io/maven-central/v/com.taobao.arthas/arthas-packaging.svg?style=flat-square" src="https://img.shields.io/maven-central/v/com.taobao.arthas/arthas-packaging.svg?style=flat-square" /></a></p>
-</div>
-<div class="section" id="uninstall">
-<h2>Uninstall<a class="headerlink" href="#uninstall" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="contents">
+<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
 <ul>
-<li><p>On Linux/Unix/Mac, delete the files with the following command:</p>
-<div class="highlight-bash notranslate"><div class="highlight hljs"><pre class="bash">rm -rf ~/.arthas/
-rm -rf ~/logs/arthas/</pre></div>
-</div>
-</li>
-<li><p>On Windows, delete <code class="docutils literal notranslate"><span class="pre">.arthas</span></code> and <code class="docutils literal notranslate"><span class="pre">logs/arthas</span></code> directory under user home.</p></li>
+<li class="toctree-l1"><a class="reference external" href="https://alibaba.github.io/arthas/arthas-tutorials?language=en">Online tutorials(Recommend)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install-detail.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick-start.html">Quick start</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced-use.html">Advanced usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="commands.html">Commands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="web-console.html">WebConsole</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docker.html">Docker</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/alibaba/arthas/issues?q=label%3Auser-case">User cases</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/alibaba/arthas/issues?q=label%3Aquestion-answered">Questions and answers</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/alibaba/arthas">Fork me at GitHub</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/alibaba/arthas/blob/master/CONTRIBUTING.md#">Compile and debug/CONTRIBUTING</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/alibaba/arthas/releases">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact-us.html">Contact us</a></li>
 </ul>
 </div>
 </div>
+</div>
+
+
            </div>
            
           </div>
@@ -236,12 +208,12 @@ rm -rf ~/logs/arthas/</pre></div>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="download.html" class="btn btn-neutral float-right" title="Download" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="install-detail.html" class="btn btn-neutral float-right" title="Install Arthas" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="index.html" class="btn btn-neutral float-left" title="Arthas Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
+  
+
   <hr/>
 
   <div role="contentinfo">
@@ -260,11 +232,15 @@ rm -rf ~/logs/arthas/</pre></div>
     </section>
 
   </div>
+  
+
+
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
 <div class="github-fork-ribbon-wrapper right">
   <div class="github-fork-ribbon">
     <a href="https://github.com/alibaba/arthas" target="_blank">Fork me at GitHub</a>
@@ -296,5 +272,8 @@ rm -rf ~/logs/arthas/</pre></div>
     s.parentNode.insertBefore(hm, s);
   })();
 </script>  
+ 
+
+
 </body>
 </html>
